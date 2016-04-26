@@ -26,6 +26,11 @@ import CoreData
 class LoginViewController: UIViewController {
   
   var managedObjectContext: NSManagedObjectContext? = nil
+    
+    let usernameKey = "batman"
+    let passwordKey = "Hello Bruce!"
+    
+    
   
   @IBOutlet weak var usernameTextField: UITextField!
   @IBOutlet weak var passwordTextField: UITextField!
@@ -40,9 +45,21 @@ class LoginViewController: UIViewController {
   // MARK: - Action for checking username/password
   @IBAction func loginAction(sender: AnyObject) {
     
-    self.performSegueWithIdentifier("dismissLogin", sender: self)
+    if checkLogin(self.usernameTextField.text!, password: self.passwordTextField.text!) {
+        self.performSegueWithIdentifier("dismissLogin", sender: self)
+
+    }
+    
 
   }
+    
+    func checkLogin(username: String, password: String) -> Bool {
+        if ((username == usernameKey) && (password == passwordKey)) {
+            return true
+        }else{
+            return false
+        }
+    }
   
   
   
