@@ -27,9 +27,11 @@ class LoginViewController: UIViewController {
   
   var managedObjectContext: NSManagedObjectContext? = nil
     
-    let usernameKey = "batman"
-    let passwordKey = "Hello Bruce!"
-    
+    let MyKeychainWrapper = KeychainWrapper()
+    let createLoginButtonTag = 0
+    let loginButtonTag = 1
+
+    @IBOutlet weak var loginButton: UIButton!
     
   
   @IBOutlet weak var usernameTextField: UITextField!

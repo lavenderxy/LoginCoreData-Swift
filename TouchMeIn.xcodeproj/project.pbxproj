@@ -17,6 +17,7 @@
 		2A2CDCB219FB441200BDF4E3 /* TouchMeInTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2CDCB119FB441200BDF4E3 /* TouchMeInTests.swift */; };
 		2A94F6E619FE7D31007CED2D /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A94F6E519FE7D31007CED2D /* Note.swift */; };
 		2AC21FA11A005A88003FD06F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC21FA01A005A88003FD06F /* LoginViewController.swift */; };
+		37723CD91CCEF2610072C2E2 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 37723CD81CCEF2610072C2E2 /* KeychainWrapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,9 @@
 		2A2CDCB119FB441200BDF4E3 /* TouchMeInTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchMeInTests.swift; sourceTree = "<group>"; };
 		2A94F6E519FE7D31007CED2D /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		2AC21FA01A005A88003FD06F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		37723CD61CCEF2610072C2E2 /* TouchMeIn-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TouchMeIn-Bridging-Header.h"; sourceTree = "<group>"; };
+		37723CD71CCEF2610072C2E2 /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeychainWrapper.h; path = KeychainWrapper/KeychainWrapper.h; sourceTree = "<group>"; };
+		37723CD81CCEF2610072C2E2 /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeychainWrapper.m; path = KeychainWrapper/KeychainWrapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 				2A2CDC9319FB441200BDF4E3 /* TouchMeIn */,
 				2A2CDCAE19FB441200BDF4E3 /* TouchMeInTests */,
 				2A2CDC9219FB441200BDF4E3 /* Products */,
+				37723CD61CCEF2610072C2E2 /* TouchMeIn-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +95,8 @@
 				2A2CDC9D19FB441200BDF4E3 /* DetailViewController.swift */,
 				2A94F6E519FE7D31007CED2D /* Note.swift */,
 				2AC21FA01A005A88003FD06F /* LoginViewController.swift */,
+				37723CD71CCEF2610072C2E2 /* KeychainWrapper.h */,
+				37723CD81CCEF2610072C2E2 /* KeychainWrapper.m */,
 				2A2CDC9F19FB441200BDF4E3 /* Main.storyboard */,
 				2A2CDCA219FB441200BDF4E3 /* Images.xcassets */,
 				2A2CDCA419FB441200BDF4E3 /* LaunchScreen.xib */,
@@ -168,7 +175,7 @@
 		2A2CDC8919FB441200BDF4E3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "iT Guy Technologies";
 				TargetAttributes = {
@@ -229,6 +236,7 @@
 				2A94F6E619FE7D31007CED2D /* Note.swift in Sources */,
 				2A2CDC9A19FB441200BDF4E3 /* TouchMeIn.xcdatamodeld in Sources */,
 				2A2CDC9719FB441200BDF4E3 /* AppDelegate.swift in Sources */,
+				37723CD91CCEF2610072C2E2 /* KeychainWrapper.m in Sources */,
 				2A2CDC9C19FB441200BDF4E3 /* MasterViewController.swift in Sources */,
 				2A2CDC9E19FB441200BDF4E3 /* DetailViewController.swift in Sources */,
 			);
@@ -360,7 +368,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.it-guy.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TouchMeIn-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -376,7 +384,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.it-guy.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TouchMeIn-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
